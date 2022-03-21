@@ -1,0 +1,39 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+
+$font-size-root: 16px;
+$body-font-family : 'Sen',
+sans-serif;
+
+$color-pack: false;
+
+$border-radius-root: 0;
+
+$button-font-weight: 400;
+$btn-text-transform: capitalize;
+
+$btn-sizes: ('x-small': 24,
+  'small': 32,
+  'default': 40,
+  'large': 52,
+  'x-large': 68);
+
+$btn-font-sizes: ('x-small': .725rem,
+  'small': .875rem,
+  'default': 1rem,
+  'large': 1.1rem,
+  'x-large': 1.5rem);
+
+// input
+$input-font-size: 1rem;
+
+@import '~vuetify/src/styles/styles.sass';
+
+// For updating SASS lists
+$material-light: map-merge($material-light, ('background': #fdfffe,
+
+    'text': ('theme': map-get($shades, 'white'),
+      'primary': #3c4146,
+      'secondary': rgba(#888, 0.90),
+      'disabled': rgba(#888, 0.60),
+      'link': #3c4146,
+      'link-hover':#29C95D)));

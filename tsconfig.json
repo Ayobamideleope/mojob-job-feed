@@ -1,0 +1,18 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "vuetify",
+      "@nuxtjs/axios"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    ".output"
+  ]
+}
